@@ -77,7 +77,6 @@ void loop() {
       for (int i = 0; i < 5; i++)
      {
      uint8_t r = sensor.readHoldingRegisters(0, 5);
-     uint8_t s = sensor.setSlave(2);
      uint16_t Out = sensor.getResponseBuffer(i); //reading address of sensor
      Serial.print("i is ");
      Serial.println(i);
